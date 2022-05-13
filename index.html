@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: white;font-family: 'Pacifico', cursive;font-size: 35px;"> S h o P P e n  </h1>
+        <div class="cart-box">
+          <div class="cart-icon">
+            <i class="fas fa-cart-arrow-down fa-2x"></i>
+          </div>
+          <div  class="whole-cart-window hide">
+            <h2>Shopping Bag</h2>
+            <div class="cart-wrapper">
+            </div>
+            <div class="subtotal">Subtotal: $0.00</div>
+          </div>
+        </div>
+      </header>
+      <section class="shop-section" style=" padding-top: 50px;">
+        <div class="card-wrapper">
+          <div data-id="1" class="card-item">
+            <img src="data:image/jpeg;base64,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" />
+            <div class="details">
+              <h3>Bic Cristal Ballpoint Pen Black</h3>
+              <p>
+                <span>The pen writes straight even if it is crooked</span>
+                <span class="price">Price: $73.44</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div data-id="2" class="card-item">
+            <img src="data:image/jpeg;base64,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" />
+            <div class="details">
+              <h3>Oyal pen</h3>
+              <p>
+                <span>
+                    The pen writes straight even if it is crooked
+                </span>
+                <span class="price">Price: $43.44</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+          <!-- product 3 -->
+          <div data-id="3" class="card-item">
+            <img src="https://www.thepencompany.com/blog/wp-content/uploads/76883408_O-550.jpg" />
+            <div class="details">
+              <h3>MONTE Pen</h3>
+              <p>
+                <span>The pen writes straight even if it is crooked</span>
+                <span class="price">Price: $23.88</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+          <!-- product 4 -->
+          <div data-id="4" class="card-item">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/602184df77cf7ecf35ada68b/Montblanc-High-Artistry-The-Great-Wall-LE-1-Imperial-/0x0.jpg?fit=crop&format=jpg&crop=3000,1889,x0,y123,safe" />
+            <div class="details">
+              <h3>DIORQUAKE be Pen</h3>
+              <p>
+                <span>
+                  The pen writes straight even if it is crooked
+                </span>
+                <span class="price">Price: $33.49</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+          <!-- product 5 -->
+          <div data-id="5" class="card-item">
+            <img src="https://ae01.alicdn.com/kf/HTB1nWjbSmrqK1RjSZK9q6xyypXaK/Jinhao-5000-Vintage-Luxury-Metal-Calligraphy-Fountain-Pen-Bent-Nib-Beautiful-Dragon-Texture-Carving-Golden-White.jpg_Q90.jpg_.webp" />
+            <div class="details">
+              <h3>LETTER PEN</h3>
+              <p>
+                <span>The pen writes straight even if it is crooked</span>
+                <span class="price">Price: $55.88</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+          <!-- product 6 -->
+          <div data-id="6" class="card-item">
+            <img src="https://hubpen.com/images/628REDBLUE-ViennaRed.jpg" />
+            <div class="details">
+              <h3> Track Pen</h3>
+              <p>
+                <span>
+                  The pen writes straight even if it is crooked
+                </span>
+                <span class="price">Price: $39.99</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+  
+          <!-- product 7 -->
+          <div data-id="7" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYlixNmUNHed5An-aoHgBuYM93KEeIhHQK1TwzBLsXDEzgNxe2qOGd8m65kumoZffSUk&usqp=CAU" />
+            <div class="details">
+              <h3>HORZE Pen</h3>
+              <p>
+                <span>
+                  The pen writes straight even if it is crooked
+                </span>
+                <span class="price">Price: $29.00</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+  
+          <!-- product 8 -->
+          <div data-id="8" class="card-item">
+            <img src="https://cdn.shopify.com/s/files/1/0082/2840/5353/products/10_BA1_BRO_TTM.jpg?v=1614052123">
+            <div class="details">
+              <h3>TACTICAL Pen</h3>
+              <p>
+                <span>The pen writes straight even if it is crooked</span>
+                <span class="price">Price: $32.99</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+           <!-- product 9 -->
+           <div data-id="9" class="card-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8XZK3P988jrrFq5QIrKgI1Ft4ezZDPi3CA&usqp=CAU">
+            <div class="details">
+              <h3> Huff Belt</h3>
+              <p>
+                <span>A strip of leather or other material worn along <br> the waist, especially to support clothes.</span>
+                <span class="price">Price: $25.24</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+      </section>
+    <script src="assets/css/js/main.js"></script>
+</body>
+</html>
